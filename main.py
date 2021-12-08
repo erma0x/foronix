@@ -1,6 +1,5 @@
 import asyncio
 import logging
-import re
 
 from telethon.sync import TelegramClient, events
 from telethon.tl.functions.messages import GetDialogsRequest
@@ -11,16 +10,17 @@ from telethon.events import StopPropagation, NewMessage
 TEXT_PATTERN = '0x'
 LENGHT_ADDRESS = 42 # prefix + address
 
-group_name = 'Test'
+######## [  VARIABLES  ] ####################
+group_name = 'Test' # Telegram group that I need to scan
+username = "@my_username"
+phone = "+111111111111" # use full phone number including + and country code 
 
 # Use API id and API hash from my.telegram.org
 # Those are just examples USE YOUR OWN! 
 api_id = 12526799
 api_hash = "c5br4r3y95t5dcd8225e3f6eb5c1b500" 
+##############################################
 
-# use full phone number including + and country code 
-phone = "+111111111111"
-username = "@my_username"
 
 # create the client
 client = TelegramClient(username, api_id, api_hash)
