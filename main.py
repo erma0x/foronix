@@ -14,12 +14,13 @@ LENGHT_ADDRESS = 42 # prefix + address
 group_name = 'Test'
 
 # Use API id and API hash from my.telegram.org
-api_id = 16524799
-api_hash = "fdb94b3595455c8832553b6eb8c1b503"
+# Those are just examples USE YOUR OWN! 
+api_id = 12526799
+api_hash = "c5br4r3y95t5dcd8225e3f6eb5c1b500" 
 
-# use full phone number including + and country code
-phone = "+393271589163"
-username = "@hydrogeek"
+# use full phone number including + and country code 
+phone = "+111111111111"
+username = "@my_username"
 
 # create the client
 client = TelegramClient(username, api_id, api_hash)
