@@ -2,16 +2,19 @@
 ### Telegram chat scanner for new messages containing eth addresses.
 
 ## Installation
-```python    
+1. Upgrade pip
+```python 
 python3 -m pip install --upgrade pip 
 ```
+
+2. Install telethon
 ```python 
 python3 -m pip install --upgrade telethon 
 
 ```
-Insert your telegram api credential into _main.py_ or create one with my.telegram.org
+3. Change telegram api credential into _main.py_ with your, if you don't have it create one API with my.telegram.org
 
-## Run
+## How to run
 ```python
 python3 main.py
 ```
